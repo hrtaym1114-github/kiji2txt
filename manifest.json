@@ -6,7 +6,7 @@
   "content_scripts": [
     {
       "matches": ["*://*/*"],
-      "js": ["content.js"]
+      "js": ["/kiji2txt/content.js"]
     }
   ],
   "browser_action": {

@@ -11,7 +11,7 @@ chrome.browserAction.onClicked.addListener(function() {
     var filename = title + ".txt";
 
     // テキストファイルの中身日に本文のテキストを書き込み
-    var data = new Blob([text], {type: "text/plain"});
+    var data = new Blob([text], {type: "text/plain;charset=UTF-8"});
     var url = window.URL.createObjectURL(data);
 
     // データをローカルに保存
